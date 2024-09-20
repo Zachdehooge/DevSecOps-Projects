@@ -1,2 +1,2 @@
 # DevSecOps-Projects
-A collection of my DevOps and DevSecOps projects 
+A collection of my DevSecOps projects 
