@@ -25,23 +25,18 @@ pipeline {
             }
         }
 
-        // TODO: DOCKER DAEMON NEEDS FIXING
-         stage('Docker Deploy') {
-            steps {
-                script {
-                    withCredentials([usernamePassword(credentialsId: 'DOCKERID', passwordVariable: 'DOCKERID_PSW', usernameVariable: 'DOCKERID_USR')]) 
-                    {
-                    // Setting up Docker
-                    sh 'docker version'                
-                    
-                    sh "docker login -u ${env.DOCKERID_USR} -p ${env.DOCKERID_PSW}"
-                    
-                    // Build Docker image
-                    sh "docker build -t ${env.DOCKERID_USR}/radar-database:latest ."
+        stage('Static Testing'){
+            steps{
+                script{
 
-                    // Push Docker image
-                    sh "docker push ${env.DOCKERID_USR}/radar-database:${tag}" 
-                    }
+                }
+            }
+        }
+
+        stage("Dynamic Testing"){
+            steps{
+                script{
+                    
                 }
             }
         }
