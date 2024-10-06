@@ -5,7 +5,8 @@
   tasks:
   
   - name: "Execute a ls command"
-    shell: "ls -a"
+    shell: 
+      ls -a
     register: "output"
 
   - debug: var=output.stdout_lines
