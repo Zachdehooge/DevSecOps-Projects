@@ -1,4 +1,6 @@
 ---
+# A few test Ansible tasks to display a working knowledge of a playbook in action // Run tasks.sh to run the playbook
+
 - name: "Local Ansible Demo"
   hosts: localhost
   connection: local
@@ -10,3 +12,12 @@
     register: "output"
 
   - debug: var=output.stdout_lines
+
+  - name: "Execute a Curl command"
+
+    shell:
+      curl google.com
+
+    register: "curl"
+
+  - debug: var=curl.stdout_lines

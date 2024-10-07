@@ -1,0 +1,922 @@
+{
+    "data": {
+        "id": "1445f8dc16bf7f0e1c7b3d16bee14ef83e6170ab00a2381d509051c64617fbfd",
+        "type": "file",
+        "links": {
+            "self": "https://www.virustotal.com/api/v3/files/1445f8dc16bf7f0e1c7b3d16bee14ef83e6170ab00a2381d509051c64617fbfd"
+        },
+        "attributes": {
+            "popular_threat_classification": {
+                "popular_threat_category": [
+                    {
+                        "value": "trojan",
+                        "count": 4
+                    }
+                ],
+                "suggested_threat_label": "trojan.mikey",
+                "popular_threat_name": [
+                    {
+                        "value": "mikey",
+                        "count": 8
+                    }
+                ]
+            },
+            "last_submission_date": 1728324724,
+            "type_tag": "peexe",
+            "type_extension": "exe",
+            "pe_info": {
+                "timestamp": 1728323268,
+                "imphash": "d10af643340e1121562abe3e6bd5b0e1",
+                "machine_type": 332,
+                "entry_point": 28498,
+                "resource_details": [
+                    {
+                        "lang": "ENGLISH US",
+                        "chi2": 69183.5,
+                        "filetype": "unknown",
+                        "entropy": 3.4970481395721436,
+                        "sha256": "19d0bd5cecefede139d30815525fd70de10471f9139e7d4430ec6639c27a9be9",
+                        "type": "RT_VERSION"
+                    }
+                ],
+                "resource_langs": {
+                    "ENGLISH US": 1
+                },
+                "resource_types": {
+                    "RT_VERSION": 1
+                },
+                "sections": [
+                    {
+                        "name": ".text",
+                        "chi2": 656235.75,
+                        "virtual_address": 4096,
+                        "entropy": 6.67,
+                        "raw_size": 135680,
+                        "flags": "rx",
+                        "virtual_size": 135408,
+                        "md5": "84837394ca7c217388963c2d9f9c0f41"
+                    },
+                    {
+                        "name": ".rdata",
+                        "chi2": 1957971.38,
+                        "virtual_address": 143360,
+                        "entropy": 4.95,
+                        "raw_size": 40448,
+                        "flags": "r",
+                        "virtual_size": 40312,
+                        "md5": "36e85a317fe0262bb66f0b20259b4b2f"
+                    },
+                    {
+                        "name": ".data",
+                        "chi2": 5538.09,
+                        "virtual_address": 184320,
+                        "entropy": 7.99,
+                        "raw_size": 366080,
+                        "flags": "rw",
+                        "virtual_size": 369536,
+                        "md5": "c19971048bfd62abbdd43c246d183095"
+                    },
+                    {
+                        "name": ".rsrc",
+                        "chi2": 90623,
+                        "virtual_address": 557056,
+                        "entropy": 3.29,
+                        "raw_size": 1024,
+                        "flags": "r",
+                        "virtual_size": 984,
+                        "md5": "c67ba8481d4e7c92e5fe9f152983a3f3"
+                    },
+                    {
+                        "name": ".reloc",
+                        "chi2": 40277.64,
+                        "virtual_address": 561152,
+                        "entropy": 6.39,
+                        "raw_size": 7168,
+                        "flags": "r",
+                        "virtual_size": 6868,
+                        "md5": "d5034316f3193736196b1e4313c773a6"
+                    }
+                ],
+                "compiler_product_versions": [
+                    "[---] Unmarked objects count=88",
+                    "id: 0x103, version: 29395 count=12",
+                    "id: 0x105, version: 29395 count=171",
+                    "id: 0x104, version: 29395 count=21",
+                    "id: 0x101, version: 29395 count=3",
+                    "id: 0x103, version: 33808 count=20",
+                    "id: 0x104, version: 33808 count=18",
+                    "id: 0x105, version: 33808 count=77",
+                    "id: 0x109, version: 34120 count=1",
+                    "id: 0xff, version: 34120 count=1",
+                    "id: 0x102, version: 34120 count=1"
+                ],
+                "rich_pe_header_hash": "ebbb237ac9cbe0fd6a5836fdc79122b6",
+                "import_list": [
+                    {
+                        "library_name": "KERNEL32.dll",
+                        "imported_functions": [
+                            "AttachConsole",
+                            "CloseHandle",
+                            "CreateFileW",
+                            "DecodePointer",
+                            "DeleteCriticalSection",
+                            "EncodePointer",
+                            "EnterCriticalSection",
+                            "EnumSystemLocalesW",
+                            "ExitProcess",
+                            "FindClose",
+                            "FindFirstFileExW",
+                            "FindNextFileW",
+                            "FlushFileBuffers",
+                            "FreeEnvironmentStringsW",
+                            "FreeLibrary",
+                            "GetACP",
+                            "GetCommandLineA",
+                            "GetCommandLineW",
+                            "GetConsoleMode",
+                            "GetConsoleOutputCP",
+                            "GetCPInfo",
+                            "GetCurrentProcess",
+                            "GetCurrentProcessId",
+                            "GetCurrentThreadId",
+                            "GetEnvironmentStringsW",
+                            "GetFileSizeEx",
+                            "GetFileType",
+                            "GetLastError",
+                            "GetLocaleInfoW",
+                            "GetModuleFileNameW",
+                            "GetModuleHandleExW",
+                            "GetModuleHandleW",
+                            "GetOEMCP",
+                            "GetProcAddress",
+                            "GetProcessHeap",
+                            "GetStartupInfoW",
+                            "GetStdHandle",
+                            "GetStringTypeW",
+                            "GetSystemTimeAsFileTime",
+                            "GetUserDefaultLCID",
+                            "HeapAlloc",
+                            "HeapFree",
+                            "HeapReAlloc",
+                            "HeapSize",
+                            "InitializeCriticalSectionAndSpinCount",
+                            "InitializeCriticalSectionEx",
+                            "InitializeSListHead",
+                            "IsDebuggerPresent",
+                            "IsProcessorFeaturePresent",
+                            "IsValidCodePage",
+                            "IsValidLocale",
+                            "LCMapStringEx",
+                            "LCMapStringW",
+                            "LeaveCriticalSection",
+                            "LoadLibraryExW",
+                            "MultiByteToWideChar",
+                            "QueryPerformanceCounter",
+                            "RaiseException",
+                            "ReadConsoleW",
+                            "ReadFile",
+                            "RtlUnwind",
+                            "SetFilePointerEx",
+                            "SetLastError",
+                            "SetStdHandle",
+                            "SetUnhandledExceptionFilter",
+                            "TerminateProcess",
+                            "TlsAlloc",
+                            "TlsFree",
+                            "TlsGetValue",
+                            "TlsSetValue",
+                            "UnhandledExceptionFilter",
+                            "WideCharToMultiByte",
+                            "WriteConsoleW",
+                            "WriteFile"
+                        ]
+                    }
+                ]
+            },
+            "detectiteasy": {
+                "filetype": "PE32",
+                "values": [
+                    {
+                        "info": "EXE32",
+                        "version": "2017 v.15.5-6",
+                        "type": "Compiler",
+                        "name": "EP:Microsoft Visual C/C++"
+                    },
+                    {
+                        "info": "LTCG/C++",
+                        "version": "19.36.34120",
+                        "type": "Compiler",
+                        "name": "Microsoft Visual C/C++"
+                    },
+                    {
+                        "version": "14.36.34120",
+                        "type": "Linker",
+                        "name": "Microsoft Linker"
+                    },
+                    {
+                        "version": "2022 version 17.6",
+                        "type": "Tool",
+                        "name": "Visual Studio"
+                    }
+                ]
+            },
+            "ssdeep": "12288:PMyHj9OPDUY0MYICPYpRx2LHdzW8J9DpddINVzb3FXPa1c5A4S:PB9O5CQpM9zW8/DfyNV33N5x",
+            "meaningful_name": "proquota.exe",
+            "size": 551424,
+            "authentihash": "de20d625aac3f792cd51c7c16f9c49dc3366293639a65cb5058820bd542c6f2b",
+            "times_submitted": 1,
+            "first_submission_date": 1728324724,
+            "first_seen_itw_date": 1728323693,
+            "unique_sources": 1,
+            "creation_date": 1728323268,
+            "last_analysis_date": 1728324724,
+            "trid": [
+                {
+                    "file_type": "Win64 Executable (generic)",
+                    "probability": 32.2
+                },
+                {
+                    "file_type": "Win32 Dynamic Link Library (generic)",
+                    "probability": 20.1
+                },
+                {
+                    "file_type": "Win16 NE executable (generic)",
+                    "probability": 15.4
+                },
+                {
+                    "file_type": "Win32 Executable (generic)",
+                    "probability": 13.7
+                },
+                {
+                    "file_type": "OS/2 Executable (generic)",
+                    "probability": 6.2
+                }
+            ],
+            "last_analysis_results": {
+                "Bkav": {
+                    "method": "blacklist",
+                    "engine_name": "Bkav",
+                    "engine_version": "2.0.0.1",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "W32.AIDetectMalware"
+                },
+                "Lionic": {
+                    "method": "blacklist",
+                    "engine_name": "Lionic",
+                    "engine_version": "8.16",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Elastic": {
+                    "method": "blacklist",
+                    "engine_name": "Elastic",
+                    "engine_version": "4.0.166",
+                    "engine_update": "20241001",
+                    "category": "malicious",
+                    "result": "malicious (high confidence)"
+                },
+                "MicroWorld-eScan": {
+                    "method": "blacklist",
+                    "engine_name": "MicroWorld-eScan",
+                    "engine_version": "14.0.409.0",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Gen:Variant.Mikey.171327"
+                },
+                "CTX": {
+                    "method": "blacklist",
+                    "engine_name": "CTX",
+                    "engine_version": "2024.8.29.1",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "exe.unknown.mikey"
+                },
+                "CAT-QuickHeal": {
+                    "method": "blacklist",
+                    "engine_name": "CAT-QuickHeal",
+                    "engine_version": "22.00",
+                    "engine_update": "20241006",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Skyhigh": {
+                    "method": "blacklist",
+                    "engine_name": "Skyhigh",
+                    "engine_version": "v2021.2.0+4045",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "BehavesLike.Win32.Generic.hc"
+                },
+                "McAfee": {
+                    "method": "blacklist",
+                    "engine_name": "McAfee",
+                    "engine_version": "6.0.6.653",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Cylance": {
+                    "method": "blacklist",
+                    "engine_name": "Cylance",
+                    "engine_version": "3.0.0.0",
+                    "engine_update": "20241003",
+                    "category": "malicious",
+                    "result": "Unsafe"
+                },
+                "VIPRE": {
+                    "method": "blacklist",
+                    "engine_name": "VIPRE",
+                    "engine_version": "6.0.0.35",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Gen:Variant.Mikey.171327"
+                },
+                "K7AntiVirus": {
+                    "method": "blacklist",
+                    "engine_name": "K7AntiVirus",
+                    "engine_version": "12.193.53494",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Alibaba": {
+                    "method": "blacklist",
+                    "engine_name": "Alibaba",
+                    "engine_version": "0.3.0.5",
+                    "engine_update": "20190527",
+                    "category": "undetected",
+                    "result": null
+                },
+                "K7GW": {
+                    "method": "blacklist",
+                    "engine_name": "K7GW",
+                    "engine_version": "12.193.53494",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "CrowdStrike": {
+                    "method": "blacklist",
+                    "engine_name": "CrowdStrike",
+                    "engine_version": "1.0",
+                    "engine_update": "20231026",
+                    "category": "malicious",
+                    "result": "win/malicious_confidence_100% (D)"
+                },
+                "Baidu": {
+                    "method": "blacklist",
+                    "engine_name": "Baidu",
+                    "engine_version": "1.0.0.2",
+                    "engine_update": "20190318",
+                    "category": "undetected",
+                    "result": null
+                },
+                "VirIT": {
+                    "method": "blacklist",
+                    "engine_name": "VirIT",
+                    "engine_version": "9.5.803",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Symantec": {
+                    "method": "blacklist",
+                    "engine_name": "Symantec",
+                    "engine_version": "1.22.0.0",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "ML.Attribute.HighConfidence"
+                },
+                "tehtris": {
+                    "method": "blacklist",
+                    "engine_name": "tehtris",
+                    "engine_version": "v0.1.4",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "ESET-NOD32": {
+                    "method": "blacklist",
+                    "engine_name": "ESET-NOD32",
+                    "engine_version": "30013",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "a variant of Win32/Kryptik.HYAB"
+                },
+                "Zoner": {
+                    "method": "blacklist",
+                    "engine_name": "Zoner",
+                    "engine_version": "2.2.2.0",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "APEX": {
+                    "method": "blacklist",
+                    "engine_name": "APEX",
+                    "engine_version": "6.583",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Malicious"
+                },
+                "Paloalto": {
+                    "method": "blacklist",
+                    "engine_name": "Paloalto",
+                    "engine_version": "0.9.0.1003",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "generic.ml"
+                },
+                "ClamAV": {
+                    "method": "blacklist",
+                    "engine_name": "ClamAV",
+                    "engine_version": "1.4.1.0",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "GData": {
+                    "method": "blacklist",
+                    "engine_name": "GData",
+                    "engine_version": "A:25.39015B:27.37729",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Gen:Variant.Mikey.171327"
+                },
+                "Kaspersky": {
+                    "method": "blacklist",
+                    "engine_name": "Kaspersky",
+                    "engine_version": "22.0.1.28",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "UDS:Trojan-PSW.Win32.Lumma.gen"
+                },
+                "BitDefender": {
+                    "method": "blacklist",
+                    "engine_name": "BitDefender",
+                    "engine_version": "7.2",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Gen:Variant.Mikey.171327"
+                },
+                "NANO-Antivirus": {
+                    "method": "blacklist",
+                    "engine_name": "NANO-Antivirus",
+                    "engine_version": "1.0.146.25796",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Virus.Win32.Gen.ccmw"
+                },
+                "SUPERAntiSpyware": {
+                    "method": "blacklist",
+                    "engine_name": "SUPERAntiSpyware",
+                    "engine_version": "5.6.0.1032",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Avast": {
+                    "method": "blacklist",
+                    "engine_name": "Avast",
+                    "engine_version": "23.9.8494.0",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Tencent": {
+                    "method": "blacklist",
+                    "engine_name": "Tencent",
+                    "engine_version": "1.0.0.1",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Emsisoft": {
+                    "method": "blacklist",
+                    "engine_name": "Emsisoft",
+                    "engine_version": "2024.1.0.53752",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Gen:Variant.Mikey.171327 (B)"
+                },
+                "F-Secure": {
+                    "method": "blacklist",
+                    "engine_name": "F-Secure",
+                    "engine_version": "18.10.1547.307",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "DrWeb": {
+                    "method": "blacklist",
+                    "engine_name": "DrWeb",
+                    "engine_version": "7.0.65.5230",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Zillya": {
+                    "method": "blacklist",
+                    "engine_name": "Zillya",
+                    "engine_version": "2.0.0.5210",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "TrendMicro": {
+                    "method": "blacklist",
+                    "engine_name": "TrendMicro",
+                    "engine_version": "11.0.0.1006",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "McAfeeD": {
+                    "method": "blacklist",
+                    "engine_name": "McAfeeD",
+                    "engine_version": "1.2.0.7977",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "ti!1445F8DC16BF"
+                },
+                "SentinelOne": {
+                    "method": "blacklist",
+                    "engine_name": "SentinelOne",
+                    "engine_version": "24.2.1.1",
+                    "engine_update": "20240417",
+                    "category": "malicious",
+                    "result": "Static AI - Malicious PE"
+                },
+                "Trapmine": {
+                    "method": "blacklist",
+                    "engine_name": "Trapmine",
+                    "engine_version": "4.0.16.240",
+                    "engine_update": "20241004",
+                    "category": "undetected",
+                    "result": null
+                },
+                "CMC": {
+                    "method": "blacklist",
+                    "engine_name": "CMC",
+                    "engine_version": "2.4.2022.1",
+                    "engine_update": "20241003",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Sophos": {
+                    "method": "blacklist",
+                    "engine_name": "Sophos",
+                    "engine_version": "2.5.5.0",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "ML/PE-A"
+                },
+                "Ikarus": {
+                    "method": "blacklist",
+                    "engine_name": "Ikarus",
+                    "engine_version": "6.3.23.0",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "FireEye": {
+                    "method": "blacklist",
+                    "engine_name": "FireEye",
+                    "engine_version": "35.47.0.0",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Generic.mg.c70170bcedd92e90"
+                },
+                "Jiangmin": {
+                    "method": "blacklist",
+                    "engine_name": "Jiangmin",
+                    "engine_version": "16.0.100",
+                    "engine_update": "20241006",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Webroot": {
+                    "method": "blacklist",
+                    "engine_name": "Webroot",
+                    "engine_version": "1.0.0.403",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Google": {
+                    "method": "blacklist",
+                    "engine_name": "Google",
+                    "engine_version": "1728320442",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Avira": {
+                    "method": "blacklist",
+                    "engine_name": "Avira",
+                    "engine_version": "8.3.3.20",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Varist": {
+                    "method": "blacklist",
+                    "engine_name": "Varist",
+                    "engine_version": "6.6.1.3",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Antiy-AVL": {
+                    "method": "blacklist",
+                    "engine_name": "Antiy-AVL",
+                    "engine_version": "3.0",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "GrayWare/Win32.Kryptik.gpyt"
+                },
+                "Kingsoft": {
+                    "method": "blacklist",
+                    "engine_name": "Kingsoft",
+                    "engine_version": "None",
+                    "engine_update": "20240725",
+                    "category": "malicious",
+                    "result": "malware.kb.a.998"
+                },
+                "Gridinsoft": {
+                    "method": "blacklist",
+                    "engine_name": "Gridinsoft",
+                    "engine_version": "1.0.191.174",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Xcitium": {
+                    "method": "blacklist",
+                    "engine_name": "Xcitium",
+                    "engine_version": "37111",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Arcabit": {
+                    "method": "blacklist",
+                    "engine_name": "Arcabit",
+                    "engine_version": "2022.0.0.18",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Trojan.Mikey.D29D3F"
+                },
+                "ViRobot": {
+                    "method": "blacklist",
+                    "engine_name": "ViRobot",
+                    "engine_version": "2014.3.20.0",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "ZoneAlarm": {
+                    "method": "blacklist",
+                    "engine_name": "ZoneAlarm",
+                    "engine_version": "1.0",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Microsoft": {
+                    "method": "blacklist",
+                    "engine_name": "Microsoft",
+                    "engine_version": "1.1.24080.9",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Trojan:Win32/Sabsik.FL.A!ml"
+                },
+                "Cynet": {
+                    "method": "blacklist",
+                    "engine_name": "Cynet",
+                    "engine_version": "4.0.1.1",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Malicious (score: 100)"
+                },
+                "AhnLab-V3": {
+                    "method": "blacklist",
+                    "engine_name": "AhnLab-V3",
+                    "engine_version": "3.26.1.10507",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Acronis": {
+                    "method": "blacklist",
+                    "engine_name": "Acronis",
+                    "engine_version": "1.2.0.121",
+                    "engine_update": "20240328",
+                    "category": "undetected",
+                    "result": null
+                },
+                "VBA32": {
+                    "method": "blacklist",
+                    "engine_name": "VBA32",
+                    "engine_version": "5.0.0",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "ALYac": {
+                    "method": "blacklist",
+                    "engine_name": "ALYac",
+                    "engine_version": "2.0.0.10",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Gen:Variant.Mikey.171327"
+                },
+                "TACHYON": {
+                    "method": "blacklist",
+                    "engine_name": "TACHYON",
+                    "engine_version": "2024-10-07.02",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Malwarebytes": {
+                    "method": "blacklist",
+                    "engine_name": "Malwarebytes",
+                    "engine_version": "4.5.5.54",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Panda": {
+                    "method": "blacklist",
+                    "engine_name": "Panda",
+                    "engine_version": "4.6.4.2",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "TrendMicro-HouseCall": {
+                    "method": "blacklist",
+                    "engine_name": "TrendMicro-HouseCall",
+                    "engine_version": "10.0.0.1040",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Rising": {
+                    "method": "blacklist",
+                    "engine_name": "Rising",
+                    "engine_version": "25.0.0.28",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "Trojan.Kryptik@AI.92 (RDML:7AlLlmCpsafqLDZJFeF8Fg)"
+                },
+                "Yandex": {
+                    "method": "blacklist",
+                    "engine_name": "Yandex",
+                    "engine_version": "5.5.2.24",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "huorong": {
+                    "method": "blacklist",
+                    "engine_name": "huorong",
+                    "engine_version": "6bf3ba4:6bf3ba4:4e20abc:4e20abc",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "MaxSecure": {
+                    "method": "blacklist",
+                    "engine_name": "MaxSecure",
+                    "engine_version": "1.0.0.1",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Fortinet": {
+                    "method": "blacklist",
+                    "engine_name": "Fortinet",
+                    "engine_version": "None",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "AVG": {
+                    "method": "blacklist",
+                    "engine_name": "AVG",
+                    "engine_version": "23.9.8494.0",
+                    "engine_update": "20241007",
+                    "category": "undetected",
+                    "result": null
+                },
+                "DeepInstinct": {
+                    "method": "blacklist",
+                    "engine_name": "DeepInstinct",
+                    "engine_version": "5.0.0.8",
+                    "engine_update": "20241007",
+                    "category": "malicious",
+                    "result": "MALICIOUS"
+                },
+                "alibabacloud": {
+                    "method": "blacklist",
+                    "engine_name": "alibabacloud",
+                    "engine_version": "2.2.0",
+                    "engine_update": "20240910",
+                    "category": "undetected",
+                    "result": null
+                },
+                "Trustlook": {
+                    "method": "blacklist",
+                    "engine_name": "Trustlook",
+                    "engine_version": "1.0",
+                    "engine_update": "20241007",
+                    "category": "type-unsupported",
+                    "result": null
+                },
+                "SymantecMobileInsight": {
+                    "method": "blacklist",
+                    "engine_name": "SymantecMobileInsight",
+                    "engine_version": "2.0",
+                    "engine_update": "20240103",
+                    "category": "type-unsupported",
+                    "result": null
+                },
+                "BitDefenderFalx": {
+                    "method": "blacklist",
+                    "engine_name": "BitDefenderFalx",
+                    "engine_version": "2.0.936",
+                    "engine_update": "20240128",
+                    "category": "type-unsupported",
+                    "result": null
+                },
+                "Avast-Mobile": {
+                    "method": "blacklist",
+                    "engine_name": "Avast-Mobile",
+                    "engine_version": "241007-02",
+                    "engine_update": "20241007",
+                    "category": "type-unsupported",
+                    "result": null
+                }
+            },
+            "type_tags": [
+                "executable",
+                "windows",
+                "win32",
+                "pe",
+                "peexe"
+            ],
+            "md5": "c70170bcedd92e90f2556c7501b1a559",
+            "magic": "PE32 executable (GUI) Intel 80386, for MS Windows",
+            "signature_info": {
+                "description": "ProQuota",
+                "file version": "10.0.19041.4355 (WinBuild.160101.0800)",
+                "original name": "proquota.exe",
+                "product": "Microsoft® Windows® Operating System",
+                "internal name": "proquota",
+                "copyright": "© Microsoft Corporation. All rights reserved."
+            },
+            "sha256": "1445f8dc16bf7f0e1c7b3d16bee14ef83e6170ab00a2381d509051c64617fbfd",
+            "last_modification_date": 1728332627,
+            "total_votes": {
+                "harmless": 0,
+                "malicious": 0
+            },
+            "reputation": 0,
+            "magika": "PEBIN",
+            "last_analysis_stats": {
+                "malicious": 29,
+                "suspicious": 0,
+                "undetected": 43,
+                "harmless": 0,
+                "timeout": 0,
+                "confirmed-timeout": 0,
+                "failure": 0,
+                "type-unsupported": 4
+            },
+            "vhash": "055056655d75156az4a!z",
+            "sha1": "906055b36647c5bae02e9e2db41bef9a17e2f3b1",
+            "type_description": "Win32 EXE",
+            "tlsh": "T1BDC4F11175C1C072D57316320BE1D7B4AA7DBCB00E159E9F63D44BBE8F34291DA22AAB",
+            "filecondis_info": {
+                "dhash": "0000001c1e1d0400",
+                "image": "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"
+            },
+            "names": [
+                "userBAEBGHCFCA.exe",
+                "BrunoFCFBAKJDBK.exe",
+                "proquota",
+                "proquota.exe",
+                "BrunoJKECGDBFCB.exe",
+                "userJEHJKJEBGH.exe"
+            ],
+            "tags": [
+                "peexe",
+                "spreader"
+            ]
+        }
+    }
+}
