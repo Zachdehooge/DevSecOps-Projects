@@ -20,7 +20,8 @@ func fileScan(sha256 string) {
 
 	apikey := os.Getenv("apikey")
 
-	fmt.Println("\nStarting the Virus Total Scan...\n")
+	fmt.Println("\nStarting the Virus Total Scan...")
+	fmt.Println("")
 
 	url := "https://www.virustotal.com/api/v3/files/" + sha256
 
@@ -62,7 +63,8 @@ func fileScan(sha256 string) {
 
 	defer res.Body.Close()
 
-	fmt.Println("\nVirus Total Scan Complete...\n")
+	fmt.Println("\nVirus Total Scan Complete...")
+	fmt.Println()
 }
 
 func main() {

@@ -9,3 +9,4 @@ A GO TUI application that makes a call to the Virus Total API and pulls informat
 
 ## TODO
 - Implement Bubbletea and Lipgloss
+- Implement Testing for API

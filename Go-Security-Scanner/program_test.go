@@ -1,9 +1,29 @@
 package main
 
-import "testing"
+import (
+	"net/http"
+	"testing"
+)
 
-func TestHello(t *testing.T) {
-	fileScan("1445f8dc16bf7f0e1c7b3d16bee14ef83e6170ab00a2381d509051c64617fbfd")
+func TestVirusUp(t *testing.T) {
+	t.Log("Test to verify a 200 OK response from VirusTotal")
 
-	// Implement testing for Filescan function
+	url := "https://virustotal.com"
+
+	// Perform the GET request
+	resp, err := http.Get(url)
+	if err != nil {
+		t.Fatalf("Failed to ping the website: %v", err)
+	}
+
+	defer resp.Body.Close()
+
+	// Check if the status code is 200 OK
+	if resp.StatusCode != http.StatusOK {
+		t.Errorf("Expected status code 200, but got %d", resp.StatusCode)
+	}
+}
+
+func TestAPI(t *testing.T) {
+	// Need to implement testing for a given SHA-256 hash in order to ensure that a JSON call is received
 }
