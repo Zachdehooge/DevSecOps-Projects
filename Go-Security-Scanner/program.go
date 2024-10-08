@@ -11,7 +11,7 @@ import (
 )
 
 // 1445f8dc16bf7f0e1c7b3d16bee14ef83e6170ab00a2381d509051c64617fbfd
-func fileUpload(sha256 string) {
+func fileScan(sha256 string) {
 
 	err := godotenv.Load()
 	if err != nil {
@@ -33,7 +33,7 @@ func fileUpload(sha256 string) {
 
 	v, _ := jason.NewObjectFromReader(res.Body)
 
-	threatCat, _ := v.GetString("data", "attributes", "popular_threat_classification", "popular_threat_category", "value")
+	threatLabel, _ := v.GetString("data", "attributes", "popular_threat_classification", "suggested_threat_label")
 
 	malCat, _ := v.GetInt64("data", "attributes", "last_analysis_stats", "malicious")
 	susCat, _ := v.GetInt64("data", "attributes", "last_analysis_stats", "suspicious")
@@ -44,7 +44,9 @@ func fileUpload(sha256 string) {
 	failureCat, _ := v.GetInt64("data", "attributes", "last_analysis_stats", "failure")
 	unsupportCat, _ := v.GetInt64("data", "attributes", "last_analysis_stats", "type-unsupported")
 
-	fmt.Println("\nThreat Category: ", threatCat)
+	repCat, _ := v.GetInt64("data", "attributes", "reputation")
+
+	fmt.Println("\nThreat Label: ", threatLabel)
 	fmt.Println("____________________________________")
 	fmt.Println("\nMalicious: ", malCat)
 	fmt.Println("Suspicious: ", susCat)
@@ -56,6 +58,8 @@ func fileUpload(sha256 string) {
 	fmt.Println("Unsupported: ", unsupportCat)
 	fmt.Println("____________________________________")
 
+	fmt.Println("\nReputation: ", repCat)
+
 	defer res.Body.Close()
 
 	fmt.Println("\nVirus Total Scan Complete...\n")
@@ -64,7 +68,7 @@ func fileUpload(sha256 string) {
 func main() {
 	var i string
 
-	fmt.Print("SHA256 of Sample: ")
+	fmt.Print("\nSHA256 of Sample: ")
 	fmt.Scan(&i)
-	fileUpload(i)
+	fileScan(i)
 }
