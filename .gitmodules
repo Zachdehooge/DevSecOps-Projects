@@ -1,0 +1,6 @@
+[submodule "Go-VT-Scanner"]
+	path = Go-VT-Scanner
+	url = https://github.com/Zachdehooge/Go-VT-Scanner
+[submodule "Go-Vuln-Scanner"]
+	path = Go-Vuln-Scanner
+	url = https://github.com/Zachdehooge/Go-Vuln-Scanner
